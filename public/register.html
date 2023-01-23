@@ -26,8 +26,8 @@
         const $form = $('#registerForm')
         $form.on('submit', (e) => {
             e.preventDefault() //阻止默认事件
-            const name = $form.find('input[name=name').val()
-            const password = $form.find('input[name=password').val()
+            const name = $form.find('input[name=name]').val()
+            const password = $form.find('input[name=password]').val()
             console.log(name, password)
             $.ajax({
                 method: 'POST',
